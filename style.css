@@ -1,42 +1,111 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f5;
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b1a2f;
+  color: #e4e9f0;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background: #003366;
-  color: white;
+  background-color: #122c50;
   padding: 20px;
   text-align: center;
+  border-bottom: 3px solid #0a74da;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aad4ff;
+}
+
+/* Navigation */
+nav {
+  background-color: #0a1c34;
+  padding: 10px 0;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-nav a {
-  color: white;
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #0a74da;
+  color: #ffffff;
+}
+
+/* Main Content */
 main {
-  padding: 20px;
+  padding: 30px;
+  max-width: 960px;
+  margin: auto;
 }
 
+/* Section Headers */
+main h2 {
+  color: #aad4ff;
+  border-bottom: 2px solid #0a74da;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+main ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
-  background: #003366;
-  color: white;
+  background-color: #122c50;
+  color: #ffffff;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
+  padding: 15px 0;
+  position: relative;
   bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 2px solid #0a74da;
+}
+
+/* Utility */
+a {
+  color: #aad4ff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
